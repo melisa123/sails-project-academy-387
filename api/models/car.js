@@ -1,44 +1,52 @@
-/**
- * User.js
- *
- * @description :: TODO: You might write a short summary of how this model works and what it represents here.
- * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
- */
 module.exports = {
-  attributes: {
-      marka : {
-          type: 'string', 
-          required: true
-      },
-      boja : {
-          type: 'string', 
-          required: true
-      },
-      tezina: {
-          type: 'integer'
-      },
-      brojMjesta: {
-          type: 'integer',
-          enum: ['2', '4', '5', '7']
-      },
-      kubikaza: {
-          type: 'integer',
-          required: true
-      },
-      datumTehnickog: {
-          type: 'date'
-      },
-      kilometraza: {
-          type: 'integer',
-          required: true
-      },
-      transmisija: {
-          type: 'string',
-          enum: ['automatik', 'manuelni', 'poluautomatik']
-      },
-      vrstaMotora: {
-          type: 'string',
-          enum: ['benzin', 'dizel', 'hibridni', 'elektricni']
-      }
-  }
+    attributes: {
+        brand: {
+            type: 'string',
+            required: true
+        },
+        manufacturer: {
+            type: 'string',
+            required: true
+        },
+        color: {
+            type: 'string',
+            required: true
+        },
+        seatNumber: {
+            type: 'string',
+            min: 2,
+            integer: true,
+            required: true
+        },
+        engineVolume: {
+            type: 'string',
+            required: true,
+            integer: true,
+        },
+        
+        buyPrice: {
+            type: 'float',
+            required:true,
+        },
+        
+        rentPrice: {
+            type: 'float',
+            required:true,
+        },
+
+        transmission: {
+            type: 'string',
+            enum: ['Auto', 'Manual'],
+            required: true
+        },
+        ownerUser: {
+            model: 'user'
+        },
+        ownerShop: {
+            model: 'shop'
+        },
+        rentUser: {
+            model: 'user'
+        }
+    }
 };

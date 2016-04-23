@@ -1,0 +1,10 @@
+{
+    "brand": "A8",
+    "manufacturer": "Audi",
+    "color": "Green",
+    "seatNumber": 5,
+    "engineVolume": 4198,
+    "transmission": "Auto",
+    "buyPrice": 51000,
+    "rentPrice": 1000
+}

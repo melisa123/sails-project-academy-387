@@ -1,0 +1,12 @@
+{
+    "firstName": "Melisa",
+    "lastName": "Babajic",
+    "birthDate": "05/18/1991",
+    "username": "mbabajic",
+    "country": "Bosnia and Herzegovina",
+    "email": "melisababajic@gmail.com",
+    "gender": "Female",
+    "balance": {
+        "amount": 50000
+    }
+}
